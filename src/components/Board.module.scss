@@ -1,7 +1,28 @@
-$MY_COLOR: red;
+$BCK_COLOR : grey;
+$BCK_RECT  : black;
+$GAME_COLOR: white;
 
-.meh{
-    width: 400px;
-    height: 400px;
-    background-color: $MY_COLOR;
+.board{
+    width: 100vw;
+    height: 100vh;
+    background-color: $BCK_COLOR;
+    display: flex;
+
+    .rect{
+        width: calc(100% - 30px);
+        height: calc(100% - 100px);
+        margin-left: 15px;
+        margin-top: 15px;
+        background-color: $BCK_RECT;
+
+        .gameArea{
+            width: calc(100% - 10px);
+            height: calc(100% - 10px);
+            margin-left: 5px;
+            margin-top: 5px;
+            background-color: $GAME_COLOR;
+        }
+
+    }
 }
+
